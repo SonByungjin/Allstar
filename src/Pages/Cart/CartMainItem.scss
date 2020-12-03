@@ -1,0 +1,101 @@
+.cartMainItem {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  .cartMainItemPic {
+    max-width: 98px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cartMainItemInfoContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .cartMainItemInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 0 20px;
+      .cartMainItemName {
+        font-size: 17px;
+        font-weight: 600;
+      }
+      .cartMainItemDetailContainer {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      .cartMainItemDetailContainerTwo {
+        span {
+          font-size: 14px;
+          font-weight: 300;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .cartMainItemPrice {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: right;
+      .cartMainItemPriceContainerOne {
+        .originalPrice,
+        .discountPrice {
+          margin-right: 5px;
+        }
+        .originalPrice {
+          color: black;
+        }
+        .originalPrice.underline {
+          color: gray;
+          text-decoration: line-through;
+        }
+        .discountRatio {
+          color: red;
+        }
+      }
+
+      .cartMainItemPriceContainerTwo {
+        z-index: 999;
+        .quantityOne {
+          display: flex;
+          input,
+          button {
+            font-size: 14px;
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            padding: 15px 24px;
+            cursor: pointer;
+          }
+          .quantitySelect {
+            font-size: 14px;
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            padding: 15px 24px;
+            width: 80px;
+            text-align: center;
+          }
+        }
+      }
+
+      .cartMainItemPriceContainerThree {
+        display: flex;
+        justify-content: flex-end;
+        color: gray;
+        font-size: 13px;
+        font-weight: 300;
+        text-decoration: underline;
+        .optionChange {
+          margin-right: 10px;
+        }
+        .delete {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

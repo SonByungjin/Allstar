@@ -1,0 +1,47 @@
+$fontsize: 13px;
+
+.ProductRightEtc {
+  font-size: $fontsize;
+
+  div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .shareIcons {
+    ul {
+      display: flex;
+      img {
+        position: relative;
+        top: 0;
+        transition: top linear 0.3s;
+        margin: 0 3px;
+        width: 36px;
+        height: 36px;
+      }
+      img:hover {
+        top: -10px;
+      }
+    }
+  }
+
+  .freeShippingBtn {
+    padding: 14px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+  }
+
+  .shippingInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    p {
+      color: rgb(171, 171, 171);
+      margin-left: 12px;
+      text-decoration: underline;
+    }
+    p:hover {
+      text-decoration: none;
+    }
+  }
+}

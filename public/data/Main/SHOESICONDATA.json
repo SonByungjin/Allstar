@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "척테일러 올스타",
+      "url": "https://image.converse.co.kr/cmsstatic/structured-content/15195/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%B2%99%ED%85%8C%EC%9D%BC%EB%9F%AC%EC%98%AC%EC%8A%A4%ED%83%802.jpg?gallery"
+    },
+    {
+      "id": 2,
+      "name": "척 70",
+      "url": "https://image.converse.co.kr/cmsstatic/structured-content/15196/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%B2%99702.jpg?gallery"
+    },
+    {
+      "id": 3,
+      "name": "원스타",
+      "url": "https://image.converse.co.kr/cmsstatic/structured-content/15197/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%9B%90%EC%8A%A4%ED%83%80.jpg?gallery"
+    },
+    {
+      "id": 4,
+      "name": "잭퍼셀",
+      "url": "https://image.converse.co.kr/cmsstatic/structured-content/15198/%ED%99%94%EC%9D%B4%ED%8A%B8_%EC%9E%AD%ED%8D%BC%EC%85%80.jpg?gallery"
+    }
+  ]
+}

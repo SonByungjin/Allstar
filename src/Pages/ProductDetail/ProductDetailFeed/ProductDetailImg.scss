@@ -1,0 +1,38 @@
+.ProductDetailImg {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  .ProductDetailImgInfo {
+    margin-bottom: 100px;
+    h1 {
+      font-size: 24px;
+      font-weight: 300;
+    }
+    p {
+      margin: 20px 0;
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+  .ProductDetailImgPic {
+    margin-bottom: 12px;
+    img {
+      width: 100%;
+    }
+    .imgClosed {
+      display: none;
+    }
+    .imgOpened {
+      display: block;
+    }
+  }
+  .showMore {
+    color: #757575;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}

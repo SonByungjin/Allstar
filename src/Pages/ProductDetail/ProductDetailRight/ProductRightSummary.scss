@@ -1,0 +1,36 @@
+.ProductRightSummary {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30px 0;
+
+  .productName {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+  p {
+    margin: 12px 0 0;
+  }
+  .productPrice {
+    font-size: 18px;
+  }
+  .productPrice.underline {
+    color: gray;
+    text-decoration: line-through;
+  }
+  .productGender {
+    font-size: 14px;
+    color: #757575;
+  }
+  .productDetailsBox {
+    margin-top: 12px;
+  }
+  .productShowDetails {
+    font-size: 16px;
+  }
+  .showMore {
+    display: inline;
+    margin-left: 8px;
+    color: #757575;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,12 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  .cartContainer {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 900px;
+    max-width: 1154px;
+  }
+}

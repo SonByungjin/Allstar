@@ -1,0 +1,56 @@
+.ProductList {
+  .FilterVerticalBar {
+    .FilterSilluet {
+      width: 276px;
+      overflow: hidden;
+
+      .typeOfSilluet {
+        opacity: 1;
+        height: 100px;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .silluetSquare {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--FilterColor);
+          &:last-child {
+            grid-column: 1 / 3;
+          }
+        }
+        .selectSilluetSquare {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--FilterColor);
+          color: white;
+          background-color: black;
+          &:last-child {
+            grid-column: 1 / 3;
+          }
+        }
+      }
+
+      .hideTypeOfSilluet {
+        opacity: 0;
+        height: 0px;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .silluetSquare {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--FilterColor);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.wrap {
+  width: 310px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin: 25px;
+
+  img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .productFeature {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.info {
+  width: 335px;
+  margin: 300px 0 25px 25px;
+
+  .name {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

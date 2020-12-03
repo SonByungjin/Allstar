@@ -1,0 +1,64 @@
+{
+  "miniCartData": [
+    {
+      "id": 1,
+      "pic": "https://image.converse.co.kr/cmsstatic/product/169492C_169492C_primary.jpg?browse",
+      "name":"루이 로페즈 프로 클래식 스웨이드",
+      "color": "레이크사이드블루",
+      "size": "240",
+      "quantity": 2,  
+      "price": 87000,
+      "discount_rate": 30
+    },
+    {
+      "id": 2,
+      "pic": "https://image.converse.co.kr/cmsstatic/product/169492C_169492C_primary.jpg?browse",
+      "name":"연습용 맵돌리기",
+      "color": "레이크사이드블루",
+      "size": "240",
+      "quantity": 2, 
+      "price": 79000,
+      "discount_rate": 20
+    },
+    {
+      "id": 3,
+      "pic": "https://image.converse.co.kr/cmsstatic/product/169492C_169492C_primary.jpg?browse",
+      "name":"맵돌린다 연습",
+      "color": "레이크사이드블루",
+      "size": "240",
+      "quantity": 20, 
+      "price": 79000,
+      "discount_rate": 30
+    },
+    {
+      "id": 4,
+      "pic": "https://image.converse.co.kr/cmsstatic/product/169492C_169492C_primary.jpg?browse",
+      "name":"나는 맵만 돌린다",
+      "color": "레이크사이드블루",
+      "size": "240",
+      "quantity": 2, 
+      "price": 79000,
+      "discount_rate": null
+    },
+    {
+      "id": 5,
+      "pic": "https://image.converse.co.kr/cmsstatic/product/169492C_169492C_primary.jpg?browse",
+      "name": "맵이다 맵",
+      "color": "레이크사이드블루",
+      "size" : "210",
+      "quantity": 15,
+      "price": 79000,
+      "discount_rate": 30
+    },
+    {
+      "id": 6,
+      "pic": "https://image.converse.co.kr/cmsstatic/product/169492C_169492C_primary.jpg?browse",
+      "name":"맵돌리기 연습",
+      "color": "레이크사이드블루",
+      "size": "240",
+      "quantity": 2, 
+      "price": 79000,
+      "discount_rate": 20
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+@mixin add-slide-animation {
+  animation: slide-animation 0.2s 0.2s;
+  animation-fill-mode: both;
+}
+
+@mixin add-opacity-animation {
+  animation: opacity-animation 0.2s;
+}
+
+.kidsMenuList {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 60px;
+  left: 0;
+  font-size: 28px;
+  font-weight: 600;
+  z-index: 120;
+  @include add-opacity-animation;
+
+  .showList {
+    width: 930px;
+    height: 100vh;
+    padding: 40px 0 32px 310px;
+    background-color: #ffffff;
+    @include add-slide-animation;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+
+  .recommendContainer {
+    position: absolute;
+    top: 270px;
+    left: 310px;
+    width: 560px;
+    height: 206px;
+    font-size: 14px;
+    @include add-slide-animation;
+
+    .productList {
+      display: flex;
+
+      .product {
+        margin: 8px;
+        img {
+          width: 123px;
+          height: 144px;
+          cursor: pointer;
+        }
+
+        .productName {
+          font-weight: 400;
+          margin-top: 3px;
+        }
+      }
+
+      .product:nth-child(1) {
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 51%;
+    height: 100vh;
+    cursor: pointer;
+
+    svg {
+      position: absolute;
+      top: 20px;
+      right: 22px;
+      width: 15px;
+      height: 15px;
+      fill: #ffffff;
+      opacity: 0.9;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .kidsMenuList {
+    .showList {
+      width: 700px;
+      padding: 40px 0 32px 70px;
+    }
+
+    .recommendContainer {
+      left: 70px;
+    }
+  }
+}
+
+@keyframes slide-animation {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-animation-reverse {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

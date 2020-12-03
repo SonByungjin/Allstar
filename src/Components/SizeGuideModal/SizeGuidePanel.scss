@@ -1,0 +1,75 @@
+.SizeGuide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 25%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  min-height: 10em;
+  width: 500px;
+  height: 800px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  z-index: 999;
+  overflow: hidden;
+  padding: 20px;
+
+  .sizeContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 40px;
+
+    .sizeCloseBtn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .sizeCloseBtn:hover {
+      transform: scale(1.2);
+    }
+
+    .sizeTitle {
+      font-size: 24px;
+      color: #757575;
+      margin: 20px 0;
+    }
+
+    .sizeTitleSecond {
+      width: 100%;
+      margin: 20px 0;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sizeTable {
+      width: 100%;
+      #sizes {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        tr {
+          th {
+            width: 120px;
+            padding: 8px;
+            border-bottom: 1px solid #e5e5e5;
+          }
+          td {
+            padding: 8px;
+          }
+        }
+        tr:nth-child(2n) {
+          background-color: #e5e5e5;
+        }
+      }
+    }
+  }
+}

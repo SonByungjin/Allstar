@@ -1,0 +1,82 @@
+.ProductList {
+  .FilterVerticalBar {
+    .FilterColor {
+      width: 276px;
+      overflow: hidden;
+
+      .typeOfColor {
+        opacity: 1;
+        height: 80px;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        display: flex;
+        flex-wrap: wrap;
+
+        .colorCircle {
+          cursor: pointer;
+          width: 18px;
+          height: 18px;
+          border: 1px solid rgb(223, 217, 217);
+          border-radius: 50%;
+          margin: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .selectColorBefore {
+            visibility: hidden;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+          .selectColorAfter {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+        }
+      }
+
+      .hideTypeOfColor {
+        opacity: 0;
+        height: 0px;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        display: flex;
+        flex-wrap: wrap;
+
+        .colorCircle {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          margin: 10px;
+        }
+
+        .selectColorCircle {
+          cursor: pointer;
+          width: 18px;
+          height: 18px;
+          border: 1px solid rgb(223, 217, 217);
+          border-radius: 50%;
+          margin: 10px;
+
+          .selectColorBefore {
+            visibility: hidden;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+          .selectColorAfter {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+        }
+      }
+    }
+  }
+}

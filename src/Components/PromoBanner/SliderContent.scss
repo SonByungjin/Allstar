@@ -1,0 +1,39 @@
+.sliderContent {
+  max-width: 864px;
+
+  .slick-slide {
+    width: 864px;
+    text-align: center;
+  }
+
+  .slick-prev:before {
+    background: url("https://www.iconfinder.com/data/icons/pinpoint-action/48/previous-512.png")
+      center center / 18px no-repeat;
+  }
+
+  .slick-next:before {
+    background: url("https://www.iconfinder.com/data/icons/pinpoint-action/48/next-512.png")
+      center center / 18px no-repeat;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    transform: translateY(-3px);
+  }
+
+  .textContent {
+    height: 68px;
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+
+    span {
+      font-weight: 800;
+    }
+  }
+}

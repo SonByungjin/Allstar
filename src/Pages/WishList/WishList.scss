@@ -1,0 +1,72 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.WishList {
+  .wishlistMain {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+
+    .userInfo {
+      position: sticky;
+      top: 60px;
+      height: 100%;
+      width: 25%;
+      padding-top: 60px;
+      padding-left: 12%;
+      margin-bottom: 100px;
+      & > ul {
+        margin-bottom: 50px;
+      }
+
+      .userName {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .userIcon {
+          width: 15px;
+          height: 15px;
+          margin: 10px;
+        }
+      }
+      .subTitle {
+        font-weight: bold;
+        margin-bottom: 13px;
+        & ~ li {
+          cursor: pointer;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+      }
+      .logout {
+        & > span {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .wishProductList {
+      width: 75%;
+      background-color: white;
+      padding-top: 60px;
+      padding-left: 50px;
+      & > p {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .wishProductListMain {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+      }
+    }
+  }
+}

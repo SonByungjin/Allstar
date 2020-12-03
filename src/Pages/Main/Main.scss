@@ -1,0 +1,38 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin background-default-setting {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin main-h1-default {
+  font-size: 46px;
+  font-weight: 540;
+  line-height: 60px;
+}
+
+@mixin main-h2-default {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@mixin svg-arrow-white {
+  width: 16px;
+  margin-right: 10px;
+  fill: #ffffff;
+}
+
+.main {
+  font-family: "proxima nova", "proxima-nova", "Nanum Gothic", Helvetica, Arial,
+    sans-serif;
+  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 1440px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}

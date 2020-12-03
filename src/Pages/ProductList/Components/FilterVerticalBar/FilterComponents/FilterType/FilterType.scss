@@ -1,0 +1,30 @@
+.ProductList {
+  .FilterVerticalBar {
+    .FilterType {
+      width: 276px;
+      overflow: hidden;
+      .kindsOfType {
+        opacity: 1;
+        height: 90px;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        a {
+          display: block;
+          margin-bottom: 5px;
+          color: #757575;
+        }
+      }
+      .hideKindsOfType {
+        opacity: 0;
+        height: 0;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        a {
+          display: block;
+          margin-bottom: 5px;
+          color: #757575;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+:root {
+  --FilterColor: #e5e5e5;
+}
+
+.ProductList {
+  .FilterVerticalBar {
+    .hideBar {
+      overflow: hidden;
+      cursor: pointer;
+      padding: 20px 0;
+      margin-top: 20px;
+      border-top: 1px solid var(--FilterColor);
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .filterImage {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .minusImage {
+          width: 15px;
+          position: absolute;
+          right: 0;
+        }
+        .plusImage {
+          visibility: hidden;
+          width: 15px;
+          position: absolute;
+          right: 0;
+        }
+      }
+      .hideFilterImage {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .minusImage {
+          width: 15px;
+          position: absolute;
+          right: 0;
+        }
+        .plusImage {
+          width: 15px;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+}

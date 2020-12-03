@@ -1,0 +1,130 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin background-default-setting {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin main-h1-default {
+  font-size: 46px;
+  font-weight: 540;
+  line-height: 60px;
+}
+
+@mixin main-h2-default {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@mixin svg-arrow-white {
+  width: 16px;
+  margin-right: 10px;
+  fill: #ffffff;
+}
+
+.dashBoard5 {
+  @include flex-center;
+
+  .productMain {
+    width: 50%;
+    height: 900px;
+    color: #000000;
+    background-image: url("https://image.converse.co.kr/cmsstatic/structured-content/18037/01_Home_01_Template_1440x1800.jpg?gallery");
+    @include background-default-setting;
+    padding: 30px 0 0 30px;
+
+    h1 {
+      @include main-h1-default;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      @include main-h2-default;
+      margin-bottom: 14px;
+    }
+
+    button {
+      display: block;
+      width: 180px;
+      height: 45px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      background: #000000;
+      border: 1px solid #000000;
+      outline: none;
+      padding: 11px 16px;
+      margin-bottom: 14px;
+      cursor: pointer;
+      transition: opacity 0.2s ease-out;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .productSub {
+    width: 50%;
+    height: 900px;
+
+    .top {
+      display: flex;
+      height: 450px;
+
+      .topLeft {
+        width: 50%;
+        background-image: url("https://image.converse.co.kr/cmsstatic/product/10020754-A01_10020754-A01_primary.jpg?browse");
+        @include background-default-setting;
+        transition: background-image 0.3s ease-out;
+        &:hover {
+          background-image: url("https://image.converse.co.kr/cmsstatic/product/27804/10020754%E2%80%91A01_10020754%E2%80%91A01_hover.jpg?browse");
+        }
+      }
+
+      .topRight {
+        width: 50%;
+        background-image: url("https://image.converse.co.kr/cmsstatic/product/10020755-A03_10020755-A03_primary.jpg?browse");
+        @include background-default-setting;
+      }
+
+      h2 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #ffffff;
+        padding: 30px 0 0 30px;
+      }
+    }
+
+    .bottom {
+      @include flex-center;
+      height: 450px;
+
+      .bottomLeft {
+        width: 50%;
+        height: 450px;
+        background-image: url("https://image.converse.co.kr/cmsstatic/product/10020766-A07_10020766-A07_primary.jpg?browse");
+        @include background-default-setting;
+        transition: background-image 0.3s ease-out;
+        &:hover {
+          background-image: url("https://image.converse.co.kr/cmsstatic/product/10020766-A07_10020766-A07_hover.jpg?browse");
+        }
+      }
+
+      .bottomRight {
+        width: 50%;
+        height: 450px;
+        background-image: url("https://image.converse.co.kr/cmsstatic/product/10020970-A01_10020970-A01_primary.jpg?browse");
+        @include background-default-setting;
+        transition: background-image 0.3s ease-out;
+        &:hover {
+          background-image: url("https://image.converse.co.kr/cmsstatic/product/10020970-A01_10020970-A01_hover.jpg?browse");
+        }
+      }
+    }
+  }
+}

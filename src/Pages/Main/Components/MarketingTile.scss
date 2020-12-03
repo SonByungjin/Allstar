@@ -1,0 +1,60 @@
+.marketingTile {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+
+  .tileBox {
+    width: 360px;
+    height: 258px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+
+    .imgWrap {
+      margin-top: 36px;
+      height: 36px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 24px;
+      border: none;
+      height: 30px;
+    }
+
+    .desc {
+      color: #757575;
+      opacity: 0.7;
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 18px;
+    }
+
+    .textLink {
+      color: #000000;
+      opacity: 0.7;
+      font-size: 13px;
+      text-decoration: underline;
+      padding-bottom: 3px;
+    }
+  }
+
+  .tileBox:nth-child(4) {
+    border-right: none;
+
+    .imgWrap {
+      a {
+        img {
+          margin-left: 14px;
+        }
+      }
+    }
+
+    .title,
+    .desc {
+      margin-left: 14px;
+    }
+  }
+}

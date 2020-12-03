@@ -1,0 +1,290 @@
+.registerMain {
+    font-family: "proxima nova", "proxima-nova", "Nanum Gothic", Helvetica, Arial,
+      sans-serif;
+    .signUpContainer {
+      .signUpHeader {
+        width: 100%;
+        height: 260px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-image: url(https://image.converse.co.kr/cmsstatic/bg-register-top-pc.jpg);
+        .headerInner {
+          display: flex;
+          margin: 0 atuo;
+          max-width: 1440px;
+          height: 100%;
+          margin-left: 168.5px;
+          .headerDisplay {
+            display: flex;
+            margin-left: 607px;
+            height: 260px;
+            width: 833px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+              font-size: 40px;
+              font-weight: 600;
+              line-height: 1;
+              color: white;
+            }
+            p {
+              margin: 20px 0px 0px;
+              color: white;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .signUpBody {
+        .signUpForm {
+          margin-top: 50px;
+          margin-bottom: 100px;
+          display: flex;
+          justify-content: center;
+          .entryField {
+            border-right: 1px solid #e5e5e5;
+            height: 624px;
+            width: 839.98px;
+            padding: 0px 30px 30px;
+            display: flex;
+            justify-content: center;
+            .signUpInfo {
+              max-width: 384px;
+              width: 100%;
+              margin: 0 auto;
+              .socialSignUp {
+                // height: 89.625px;
+                // width: 384px;
+                display: flex;
+                flex-direction: column;
+                button {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 384px;
+                  height: 50.63px;
+                  padding: 16px;
+                  text-decoration: none;
+                  background-color: #f5ca0f;
+                  border: 1px solid #f5ca0f;
+                  font-size: 14px;
+                  font-weight: 600;
+                  text-align: center;
+                  transition: opacity 0.35s ease-in-out;
+                  cursor: pointer;
+                  &:hover {
+                    opacity: 0.5;
+                  }
+                  #icon-kakao {
+                    height: 20px;
+                    width: 21.82px;
+                    margin-right: 10px;
+                  }
+                }
+                .makeOr {
+                  display: flex;
+                  flex-direction: row;
+                  margin-top: 25px;
+                  div {
+                    background-color: rgba(var(--b38, 219, 219, 219), 1);
+                    width: 176.59px;
+                    height: 1px;
+                    position: relative;
+                    top: 0.45em;
+                  }
+                  span {
+                    color: rgba(var(--f52, 142, 142, 142), 1);
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 15px;
+                    margin: 0 18px;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+              .normalSignUp {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                .infoTitle {
+                  h1 {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                  }
+                }
+                .allInput {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    color: red;
+                    font-size: 12px;
+                    margin-bottom: 8px;
+                  }
+                  label {
+                      font-size: 12px;
+                      margin-bottom: 8px;
+                  }
+                  input {
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    border: 1px solid #e5e5e5;
+                    padding-left: 20px;
+                  }
+                  label {
+                      color: gray;
+                      font-size: 12px;
+                      margin-bottom: 10px;
+                  }
+                  .gender {
+                    display: flex;
+                    justify-content: space-evenly;
+                    input {
+                      height: 15px;
+                      width: 15px;
+                      margin-right: 8px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .agreeField {
+            max-width: 600px;
+            width: 600px;
+            padding: 0px 30px;
+            height: 623.63px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .totalAgree {
+              max-width: 384px;
+              width: 100%;
+              .allCheck {
+                height: 23px;
+                margin-bottom: 14px;
+                input {
+                  width: 14px;
+                  height: 14px;
+                }
+                .allAgree {
+                  font-size: 16px;
+                  font-weight: 600;
+                  padding: 4px;
+                }
+              }
+              .allAgreeText {
+                  line-height: 1.5;
+                  height: 72px;
+                  margin-bottom: 16px;
+              }
+              .allAgreeLi {
+                  line-height: 2.0;
+                font-size: 14px;
+                color: #757575;
+                padding-bottom: 30px;
+              }
+            }
+            .needAgree {
+              max-width: 384px;
+              h1 {
+                font-size: 16px;
+                color: #444444;
+                font-weight: 600;
+                padding-bottom: 20px;
+              }
+              .needCheck {
+                font-size: 14px;
+                color: #757575;
+                  padding-bottom: 8px;
+                input {
+                  height: 14px;
+                  width: 14px;
+                }
+                span {
+                  font-size: 14px;
+                  padding: 4px;
+                  color: #757575;
+                }
+              }
+              .needCheckTwo {
+                font-size: 14px;
+                color: #757575;
+                input {
+                  height: 14px;
+                  width: 14px;
+                }
+                span {
+                  font-size: 14px;
+                  padding: 4px;
+                  color: #757575;
+                }
+              }
+            }
+            .selectAgree {
+              width: 384px;
+              h2 {
+                font-size: 16px;
+                color: #444444;
+                margin-top: 30px;
+                font-weight: 600;
+              }
+              p {
+                font-size: 14px;
+                color: #00c3d7;
+                padding-bottom: 20px;
+              }
+              .selectCheck {
+                font-size: 14px;
+                color: #757575;
+                  padding-bottom: 8px;
+                input {
+                  height: 14px;
+                  width: 14px;
+                }
+                span {
+                  font-size: 14px;
+                  color: #757575;
+                  padding: 4px;
+                }
+              }
+              .selectCheckTwo {
+                font-size: 14px;
+                color: #757575;
+                input {
+                  height: 14px;
+                  width: 14px;
+                }
+                span {
+                  font-size: 14px;
+                  color: #757575;
+                  padding: 4px;
+                }
+              }
+            }
+            .finalSignUp {
+              width: 384px;
+              button {
+                width: 100%;
+                height: 52px;
+                background-color: black;
+                color: white;
+                padding: 16px;
+                margin-top: 30px;
+                cursor: pointer;
+                &:hover {
+                  background-color: white;
+                  color: black;
+                  transition-duration: 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

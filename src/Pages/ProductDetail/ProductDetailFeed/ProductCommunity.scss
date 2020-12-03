@@ -1,0 +1,76 @@
+.ProductCommunity {
+  // margin: 120px 0 0 0;
+  padding: 0 60px;
+  h1 {
+    padding: 20px 0;
+    border-top: 1px solid black;
+    font-size: 36px;
+  }
+  .communityArticles {
+    margin-top: 30px;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        .imgContainer {
+          height: 100%;
+          position: relative;
+          .profileMainPic {
+            opacity: 1;
+            display: block;
+            width: 95%;
+            height: 100%;
+            transition: 0.5s ease;
+            backface-visibility: hidden;
+          }
+          .hovered {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 95%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background-color: black;
+            font-size: 14px;
+            .hoveredProfile {
+              position: absolute;
+              width: 90%;
+              top: 5%;
+              left: 5%;
+              display: flex;
+              flex-direction: column;
+              .hoveredProfileTop {
+                display: flex;
+                align-items: center;
+                height: 45px;
+                img {
+                  width: 42px;
+                  border-radius: 20px;
+                }
+                .hoveredProfileRight {
+                  display: flex;
+                  flex-direction: column;
+                  margin-left: 10px;
+                  color: white;
+                }
+              }
+              .hoveredProfileBottom {
+                margin-top: 10px;
+                color: white;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .imgContainer:hover .profileMainPic {
+          opacity: 1;
+        }
+        .imgContainer:hover .hovered {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

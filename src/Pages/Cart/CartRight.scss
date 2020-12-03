@@ -1,0 +1,76 @@
+.CartRight {
+  display: flex;
+  flex-direction: column;
+  max-width: 28%;
+  background-color: #f4f4f4;
+  text-align: center;
+  height: fit-content;
+  padding: 20px;
+  .Order {
+    span {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    .OrderPrice {
+      background-color: white;
+      border: 1px solid #e5e5e5;
+      padding: 20px;
+      font-size: 14px;
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+      }
+    }
+    .OrderBtnContainer {
+      background-color: white;
+      border: 1px solid #e5e5e5;
+      padding: 20px;
+      .OrderBtn {
+        padding: 16px;
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+  .PromoCodeContainer {
+    margin-bottom: 20px;
+    .PromoCodeMessage {
+      margin: 20px 0;
+      padding: 0 5px;
+      font-size: 14px;
+      font-weight: 300;
+      text-decoration: underline;
+    }
+    .PromoCode {
+      display: flex;
+      .PromoCodeInput {
+        width: calc(100% - 80px);
+        padding: 20px;
+        color: gray;
+        border: 1px solid #e5e5e5;
+      }
+      .PromoCodeApply {
+        width: 80px;
+        background-color: white;
+        border: 1px solid #e5e5e5;
+      }
+    }
+  }
+  .OrderInfo {
+    background-color: white;
+    color: gray;
+    text-align: left;
+    .OrderInfoOne {
+      border: 1px solid #e5e5e5;
+      padding: 15px;
+    }
+    .OrderInfoTwo {
+      border: 1px solid #e5e5e5;
+      padding: 15px;
+    }
+  }
+}

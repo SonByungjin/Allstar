@@ -1,0 +1,28 @@
+{
+  "productItem": {
+    "1": {
+      "id": 1,
+      "mainPic": "https://image.converse.co.kr/cmsstatic/product/168636C_168636C_pdp-primary.jpg?gallery=",
+      "mainPicDetail": [],
+      "detailImgInfo": "클래식하면서도 완벽한 디테일이 독창적 디자인인 반면에 유선형의 스타 앵클 패치나 외음매가 돋보이는 미드솔 같은 미묘한 변화는 눈에 두드러지게 나타납니다.",
+      "detailImg": "https://image.converse.co.kr/cmsstatic/product/27750/168636C.jpg",
+      "productDetail": {
+        "productName": "언타이틀드 라이벌",
+        "productPrice": "85,000원",
+        "productGender": "남성"
+      }
+    },
+    "2": {
+      "id": 2,
+      "mainPic": "https://image.converse.co.kr/cmsstatic/product/162058C_162058C_pdp-primary.jpg?gallery=",
+      "mainPicDetail": [],
+      "detailImgInfo": "클래식하면서도 완벽한 디테일이 독창적 디자인인 반면에 유선형의 스타 앵클 패치나 외음매가 돋보이는 미드솔 같은 미묘한 변화는 눈에 두드러지게 나타납니다.",
+      "detailImg": "https://image.converse.co.kr/cmsstatic/product/27750/168636C.jpg",
+      "productDetail": {
+        "productName": "언타이틀드 라이벌",
+        "productPrice": "85,000원",
+        "productGender": "남성"
+      }
+    }
+  }
+}

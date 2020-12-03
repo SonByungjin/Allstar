@@ -1,0 +1,158 @@
+.login {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+    .loginMain {
+        padding: 80px 100px;
+        
+        .loginBody {
+            margin: 0px auto;
+            border: 1px solid #e5e5e5;
+            padding: 60px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 538px;
+            height: 680px;
+            
+            .loginHeader {
+                font-size: 28px;
+                margin: 0px 0px 40px;
+                font-weight: 600;
+                line-height: 1;
+            }
+            
+            .loginContent {
+                
+                .loginForm {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-size: 12px;
+                        line-height: 1;
+                        letter-spacing: -0.025em;
+                        color: #ff0000;
+                        text-align: left;
+                        margin: 0 0 20px;
+                        padding: 8px 0 0;
+                    }
+                    
+                    .inputLoginId{
+                        width: 458px;
+                        height: 50px;
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        border: 1px solid #e5e5e5;
+                        outline: none;
+                    }
+                    
+                    .inputLoginPw {
+                        width: 458px;
+                        height: 50px;
+                        margin-top: 10px;
+                        padding-left: 20px;
+                        border: 1px solid #e5e5e5;
+                        outline: none;
+                    }
+                    // padding: 0px 0px 0px 20px;
+                }
+                
+                .loginTools {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .loginCheckbox {
+                        span{
+                            font-size:12px;
+                            color:#9b9b9b;
+                        }
+                    }
+                    
+                    .findIdPw {
+                        font-size:12px;
+                    }
+                }
+                
+                .loginButtons {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .loginButton {
+                        background-color:black;
+                        color:white;
+                        border: 0.5px solid #000000;
+                        text-shadow: none;
+                        padding:16px;
+                        margin-top:40px;
+                        font-size:  16px;                                                                                                                                                                                       
+                        cursor: pointer;
+                        &:hover {
+                            background-color: white;
+                            color: black;
+                            transition-duration: 426ms;
+                        }
+                    }
+                    
+                    .socialLoginBtn {
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color:#f5ca0f;
+                        border: none;
+                        width:458px;
+                        height: 52px;
+                        text-decoration: none;
+                        padding:16px;
+                        margin-top: 10px;
+                        font-size:  16px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        transition: opacity 0.35s ease-in-out;
+                        &:hover {
+                            opacity: 0.5;
+                        }
+                        #icon-kakao {
+                            height: 24px;
+                            width: 22px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                
+                .register {
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                
+                .giftPromo {
+                    display: flex;
+                    
+                    .textProm {
+                        background-color: #f4f4f4e3;
+                        margin-top: 20px;
+                        padding: 20px 30px;
+                        display: flex;
+                        font-size: 14px;
+                        width: 100%;
+                        span {
+                            width: 280px;
+                            height: 40px;
+                            line-height: 20px;
+                            font-weight: 400;
+                            color: #757575;
+                        }
+                        #icon-giftbox {
+                            height:32px;
+                            width: 32px;
+                            margin-right: 20px;   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}  

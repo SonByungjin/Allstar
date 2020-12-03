@@ -1,0 +1,64 @@
+{
+  "recommendItem": [
+    {
+      "id": 1,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": true
+    },
+    {
+      "id": 2,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": false
+    },
+    {
+      "id": 3,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": true
+    },
+    {
+      "id": 4,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": false
+    },
+    {
+      "id": 5,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": false
+    },
+    {
+      "id": 6,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": true
+    },
+    {
+      "id": 7,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": true
+    },
+    {
+      "id": 8,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": true
+    },
+    {
+      "id": 9,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": true
+    },
+    {
+      "id": 10,
+      "picture": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_primary.jpg?browse",
+      "pictureHover": "https://image.converse.co.kr/cmsstatic/product/M9160_M9160_hover.jpg?browse",
+      "isBestSeller": true
+    }
+  ]
+}

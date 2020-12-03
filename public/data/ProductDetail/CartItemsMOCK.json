@@ -1,0 +1,34 @@
+{
+  "cart_list": [
+    {
+      "id": 1,
+      "main_image": "https://image.converse.co.kr/cmsstatic/product/168636C_168636C_pdp-primary.jpg?gallery=",
+      "series_name": "척테일러 올스타 언타이틀드 라이벌",
+      "color": "화이트",
+      "size": "270",
+      "quantity": 2,
+      "price": 85000,
+      "discount_rate": 30
+    },
+    {
+      "id": 2,
+      "main_image": "https://image.converse.co.kr/cmsstatic/product/168628C_168628C_primary.jpg?browse",
+      "series_name": "두번째 아이템",
+      "color": "화이트",
+      "size": "270",
+      "quantity": 2,
+      "price": 85000,
+      "discount_rate": 50
+    },
+    {
+      "id": 3,
+      "main_image": "https://image.converse.co.kr/cmsstatic/product/168635C_168635C_primary.jpg?browse",
+      "series_name": "척테일러 올스타 언타이틀드 라이벌",
+      "color": "화이트",
+      "size": "270",
+      "quantity": 2,
+      "price": 85000,
+      "discount_rate": 40
+    }
+  ]
+}

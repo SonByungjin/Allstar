@@ -1,0 +1,92 @@
+.ProductList {
+  .ProductContainer {
+    .ProductColors {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      .colorString {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        position: absolute;
+      }
+      .colorListUnvalid {
+        opacity: 0;
+        z-index: 2;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        transition: opacity 0.1s ease-out;
+        .colorCircle {
+          margin: 0 5px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          transition: transform 0.2s ease-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+          .selectColorUnvalid {
+            visibility: hidden;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+        }
+      }
+      .colorListValid {
+        opacity: 1;
+        z-index: 2;
+        height: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: white;
+        transition: opacity 0.1s ease-out;
+        .colorCircle {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 5px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 1px solid rgb(206, 197, 197);
+          transition: transform 0.2s ease-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+          .selectColorUnvalid {
+            visibility: hidden;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+          .selectColorValid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid rgb(187, 184, 184);
+            background-color: white;
+            .selectInnerCirlce {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

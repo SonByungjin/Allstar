@@ -1,0 +1,29 @@
+.ProductList {
+  .FilterVerticalBar {
+    .FilterGender {
+      overflow: hidden;
+      width: 276px;
+      .kindsOfGender {
+        opacity: 1;
+        height: 50px;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        a {
+          display: block;
+          margin-bottom: 5px;
+          color: #757575;
+        }
+      }
+      .hideKindsOfGender {
+        opacity: 0;
+        height: 0;
+        transition: opacity 0.2s ease-out;
+        transition: height 0.2s ease-out;
+        a {
+          display: block;
+          color: #757575;
+        }
+      }
+    }
+  }
+}

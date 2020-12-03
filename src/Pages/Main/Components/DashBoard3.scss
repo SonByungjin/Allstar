@@ -1,0 +1,105 @@
+@mixin background-default-setting {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin main-h1-default {
+  font-size: 46px;
+  font-weight: 540;
+  line-height: 60px;
+}
+
+@mixin main-h2-default {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.dashBoard3 {
+  display: flex;
+
+  .modelPhoto {
+    position: relative;
+    width: 50%;
+    height: 900px;
+    color: #ffffff;
+    background-image: url("https://image.converse.co.kr/cmsstatic/structured-content/18085/01_Home_04_Template_1440x900_Big_01.jpg?gallery");
+    @include background-default-setting;
+    &:hover {
+      .buyBtn {
+        opacity: 1;
+      }
+
+      .overLay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 0.7;
+      }
+    }
+
+    .buyBtn {
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+      width: 300px;
+      font-size: 38px;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 440px 320px 0px 290px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .overLay {
+      transition: opacity 0.6s, background-color 0.6s;
+    }
+
+    .name {
+      position: absolute;
+      z-index: 1;
+      padding: 30px;
+    }
+  }
+
+  .productDesc {
+    width: 50%;
+    height: 900px;
+    text-align: right;
+    padding: 300px 30px 0 0;
+    color: #ffffff;
+    background-image: url("https://image.converse.co.kr/cmsstatic/structured-content/18083/KakaoTalk_20200907_101456078.jpg?gallery");
+    @include background-default-setting;
+
+    h1 {
+      @include main-h1-default;
+      margin-bottom: 14px;
+      margin-top: 325px;
+    }
+
+    h2 {
+      @include main-h2-default;
+      margin-bottom: 14px;
+    }
+
+    button {
+      display: inline-block;
+      width: 180px;
+      height: 45px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #000000;
+      background: #ffffff;
+      border: 1px solid #000000;
+      margin-top: 12px;
+      outline: none;
+      padding: 11px 16px;
+      cursor: pointer;
+      transition: opacity 0.2s ease-out;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

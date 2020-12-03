@@ -1,0 +1,178 @@
+@mixin add-slide-animation {
+  animation: slide-animation 0.2s 0.2s;
+  animation-fill-mode: both;
+}
+
+.navWrap {
+  position: relative;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #ffffff;
+  z-index: 120;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    height: 59px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+    .leftMenu {
+      display: flex;
+      align-items: center;
+      width: 845px;
+      height: 60px;
+      padding-left: 20px;
+      &:hover {
+        li {
+          color: gray;
+        }
+      }
+
+      li {
+        line-height: 60px;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 11px;
+        color: black;
+        &:hover {
+          div {
+            color: #000000;
+          }
+        }
+
+        a {
+          img {
+            padding-top: 22px;
+          }
+        }
+
+        div {
+          display: block;
+          cursor: pointer;
+          transition: color 0.2s ease-in-out;
+        }
+      }
+
+      li:nth-child(1) {
+        padding-left: 0;
+
+        a {
+          display: inline;
+        }
+      }
+    }
+
+    .leftMenuOn {
+      border-bottom: 2px solid #000000;
+      margin-bottom: 2px;
+      height: 58px;
+
+      div {
+        height: 58px;
+      }
+    }
+
+    .rightMenu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 595px;
+      height: 60px;
+      &:hover {
+        li {
+          a {
+            svg {
+              fill: gray;
+            }
+          }
+        }
+      }
+
+      li {
+        padding: 0 10px;
+        a {
+          svg {
+            transition: fill 0.2s ease-in-out;
+            width: 20px;
+            &:hover {
+              fill: #000000;
+            }
+          }
+        }
+      }
+
+      li:nth-child(1) {
+        a {
+          svg {
+            width: 15px;
+          }
+        }
+      }
+
+      .searchBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 250px;
+        height: 60px;
+        padding: 0;
+        margin-left: 11px;
+        color: #ffffff;
+        background-color: #000000;
+        font-size: 14px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: width 0.2s ease-in-out;
+
+        .text,
+        .icon {
+          padding: 0 20px;
+          border-bottom: #000000;
+          transition: 0.2s;
+        }
+
+        .icon {
+          width: 60px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .searchBarScrolled {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        margin-left: 11px;
+        background-color: #000000;
+        cursor: pointer;
+        transition: width 0.2s ease-in-out;
+
+        .text {
+          display: none;
+          transition: 0.2s;
+        }
+
+        .icon {
+          width: 20px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navWrapScrolled {
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #e5e5e5;
+}

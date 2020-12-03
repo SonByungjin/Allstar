@@ -1,0 +1,52 @@
+.cartMain {
+  display: flex;
+  flex-direction: column;
+  max-width: 72%;
+  padding-right: 30px;
+  .cartMainTitle {
+    width: 100%;
+    h1 {
+      color: #757575;
+      font-size: 18px;
+      line-height: 1;
+    }
+  }
+  .cartMainMessage {
+    margin: 10px 0;
+    padding: 20px 0;
+    text-align: center;
+    background: #f4f4f4;
+    span {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+  .cartMainItems {
+    .cartMainItemsContainer {
+      margin: 20px 0;
+    }
+    .cartMainItemsDeleteContainer {
+      display: flex;
+      justify-content: flex-end;
+      .cartMainItemsDeleteBtn {
+        width: 120px;
+        font-size: 12px;
+        padding: 10px 15px;
+        background-color: white;
+        border: 1px solid #e5e5e5;
+        cursor: pointer;
+      }
+    }
+  }
+  .cartProductRecommend {
+    .ProductDetailRecommend {
+      min-width: 100%;
+      .ProductRecommend {
+        margin: 0;
+        ul {
+          column-gap: 30px;
+        }
+      }
+    }
+  }
+}

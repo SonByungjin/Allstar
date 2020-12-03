@@ -1,0 +1,51 @@
+@mixin main-h1-default {
+  font-size: 46px;
+  font-weight: 540;
+  line-height: 60px;
+}
+
+@mixin main-h2-default {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@mixin svg-arrow-white {
+  width: 16px;
+  margin-right: 10px;
+  fill: #ffffff;
+}
+
+.mediaTile1 {
+  color: #ffffff;
+  max-width: 1440px;
+  height: 900px;
+  background-image: url("https://image.converse.co.kr/cmsstatic/structured-content/18133/01_Home_04_Template_1440x900_Big.jpg?gallery");
+
+  h1 {
+    @include main-h1-default;
+    padding: 540px 0 0 30px;
+  }
+
+  h2 {
+    @include main-h2-default;
+    margin: 18px 0 10px 0;
+    padding-left: 30px;
+  }
+
+  a {
+    display: inline-block;
+    padding-left: 30px;
+    margin: 10px 0 6px 0;
+    font-weight: 500;
+    font-size: 16px;
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.5;
+    }
+
+    svg {
+      @include svg-arrow-white;
+    }
+  }
+}

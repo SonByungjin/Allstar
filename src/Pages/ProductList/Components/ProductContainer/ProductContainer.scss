@@ -1,0 +1,259 @@
+@keyframes transparentOne {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes transparentTwo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes transparentThree {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes transparentFour {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes transparentFive {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes transparentSix {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.ProductList {
+  .ProductContainer {
+    position: relative;
+
+    .loveItContainer {
+      z-index: 90;
+      position: absolute;
+      height: 77%;
+      width: 100%;
+      overflow: hidden;
+      pointer-events: none;
+
+      .loveIttext {
+        text-align: center;
+        & > li {
+          font-size: 3rem;
+          font-weight: 1000;
+          opacity: 0;
+          margin: -10px 0;
+
+          letter-spacing: 5px;
+          word-spacing: 10px;
+          -webkit-text-stroke: 1px black;
+          -webkit-text-fill-color: transparent;
+        }
+        .noOneLoveIt {
+          animation-name: transparentOne;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+        }
+        .noTwoLoveIt {
+          animation-name: transparentTwo;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          animation-delay: 0.1s;
+        }
+        .noThreeLoveIt {
+          animation-name: transparentThree;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          animation-delay: 0.2s;
+        }
+        .noFourLoveIt {
+          animation-name: transparentFour;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          animation-delay: 0.3s;
+        }
+        .noFiveLoveIt {
+          animation-name: transparentFive;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          animation-delay: 0.4s;
+        }
+        .noSixLoveIt {
+          animation-name: transparentSix;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          animation-delay: 0.5s;
+        }
+      }
+    }
+
+    .loveItContainerUnvalid {
+      display: none;
+    }
+
+    .productImage {
+      position: relative;
+      cursor: pointer;
+
+      .heartImgContainer {
+        .heartImgEmpty {
+          z-index: 100;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 10%;
+          transition: transform 0.2s ease-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        .heartImgFillUnvalid {
+          z-index: 99;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 0%;
+          transition: width 0.2s ease-out;
+          transition: transform 0.2s ease-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+
+        .heartImgFillValid {
+          z-index: 99;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 10%;
+          transition: width 0.2s ease-out;
+          transition: transform 0.2s ease-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      .mainShoesImage {
+        .frontShoesImg {
+          z-index: 50;
+          position: relative;
+          width: 100%;
+          transition: opacity 0.2s ease-out;
+          &:hover {
+            opacity: 0;
+          }
+        }
+        .backShoesImg {
+          z-index: 49;
+          position: absolute;
+          width: 100%;
+          left: 0px;
+        }
+      }
+
+      .shoesImageByColor {
+        .colorShoesImage {
+          .colorShoesImageFront {
+            z-index: 30;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            transition: opacity 0.2s ease-out;
+            &:hover {
+              opacity: 0;
+            }
+          }
+          .colorShoesImageBack {
+            z-index: 29;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+          }
+        }
+
+        .showColorShoesImage {
+          .colorShoesImageFront {
+            z-index: 80;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            transition: opacity 0.2s ease-out;
+            &:hover {
+              opacity: 0;
+            }
+          }
+          .colorShoesImageBack {
+            z-index: 79;
+            position: absolute;
+            width: 100%;
+            top: 0px;
+          }
+        }
+      }
+    }
+
+    .productName {
+      cursor: pointer;
+    }
+    .productPrice {
+      #discountPrice {
+        display: none;
+      }
+      #discountRate {
+        display: none;
+      }
+    }
+    .discountPrice {
+      #price {
+        text-decoration: line-through;
+        color: rgb(191, 191, 191);
+      }
+      #discountRate {
+        color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,208 @@
+@media screen and (min-width: 768px) {
+  .miniCartDrop {
+    width: 372px;
+    border-left: 1px solid #e5e5e5;
+  }
+}
+@keyframes movemove {
+  0% {
+    transform: translate(500px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(500px, 0px);
+  }
+}
+
+.miniCartDrop {
+  position: fixed;
+  height: 100%;
+  z-index: 1100;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  animation: movemove 0.3s 0.3s;
+  animation-fill-mode: both;
+  &.miniCartActive {
+    animation: move 0.3s 0.3s;
+    animation-fill-mode: both;
+    // display: none;
+  }
+  .miniCartHeader {
+    height: 60px;
+    padding-left: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    .headerItems {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .headerActions {
+      display: flex;
+      .miniCartLink {
+        align-items: center;
+        display: flex;
+        margin-right: 20px;
+        #nav-cart {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      .miniCartClose {
+        border: none;
+        border-radius: 0;
+        color: inherit;
+        outline: none;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        border-left: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        background-color: white;
+        #icon-close {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+  .productContainer {
+    overflow-y: scroll;
+    height: 647px;
+    .miniCartProduct {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      width: 356px;
+      height: 162.5px;
+      border-bottom: 1px solid #e5e5e5;
+      .productMini {
+        div {
+          img {
+            width: 98px;
+            height: 122.5px;
+            display: flex;
+          }
+        }
+      }
+      .productMiniDetails {
+        display: flex;
+        flex-direction: column;
+        width: 202px;
+        height: 122.5px;
+        margin-left: 10px;
+        .productMiniName {
+          font-size: 14px;
+          line-height: 20px;
+          padding-right: 40px;
+          font-weight: 600;
+        }
+        .productMiniOptions {
+          margin-top: 10px;
+          font-size: 12px;
+          line-height: 20px;
+        }
+        .productMiniPrice {
+          margin-top: 12px;
+          font-size: 14px;
+          line-height: 1;
+          .discountRate {
+            color: red;
+          }
+          .miniCartPrice {
+            color: black;
+          }
+          .miniCartPrice.underline {
+            color: gray;
+            text-decoration: line-through;
+          }
+          span {
+            margin-right: 7px;
+          }
+        }
+      }
+      .removeBtn {
+        #icon-close {
+          cursor: pointer;
+          height: 10px;
+          width: 10px;
+        }
+      }
+    }
+  }
+  .miniCartTotals {
+    .subTotals {
+      padding: 20px;
+      .subTotalsCalc {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: 14px;
+        }
+        strong {
+          font-size: 20px;
+        }
+      }
+      .subTotalsMsg {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px 0px;
+        background-color: #f4f4f4;
+        div {
+          font-size: 12px;
+          color: #757575;
+          padding: 15px 0px;
+        }
+      }
+    }
+    .miniCartActions {
+      border-top: 1px solid #e5e5e5;
+      padding: 20px;
+      .shopNow {
+        width: 100%;
+        display: inline-block;
+        padding: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          color: black;
+          transition-duration: 426ms;
+        }
+      }
+      .goToCart {
+        width: 100%;
+        display: inline-block;
+        padding: 16px;
+        margin: 10px 0px 0px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: opacity 0.35s ease-in-out;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
